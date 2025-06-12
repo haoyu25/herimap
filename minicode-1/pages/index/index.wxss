@@ -1,0 +1,92 @@
+/* *index.wxss*显示样式 */
+page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.scrollarea {
+  height: 100vh;
+  width: 100%;
+}
+
+.container {
+  font-size: 12px;
+  font-weight: bold;
+  text-align: left;
+}
+
+/* 标题样式设置 */
+.title {
+  font-size: 56rpx;
+  font-weight: bold;
+  margin-top: 80rpx;
+  /* 和副标题之间的间距 */
+  text-align: left;
+  padding-left: 20rpx;
+}
+
+.subtitle {
+  text-align: left;
+  font-size: 32rpx;
+  font-weight: lighter;
+  padding-left: 20rpx;
+  margin-top: 0rpx;
+}
+
+.biaozhu{
+  text-align: right;
+  font-size: 28rpx;
+  padding-right: 10rpx;
+  padding-top: 10rpx;
+}
+
+.date{
+  font-size: 12px;
+}
+
+.route-title {
+  font-size: 12px;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 20rpx;
+  padding-top: 80rpx;
+}
+
+.map-title {
+  font-size: 12px;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 20rpx;
+  padding-top: 200rpx;
+}
+
+/* 地图样式 */
+map {
+  /* 设置边框线宽、线形 */
+  border: 1px solid #ddd;
+  /* 设置圆角矩形半径 */
+  border-radius: 10px;
+  /* 设置左侧内边距 */
+  padding-left: 0;
+  /* 位置绝对居中 */
+  position: absolute;
+  /* <map>组件的上边缘距离其父容器顶部的距离设置为父容器高度的67%。 */
+  top: 43%;
+  left: 49%;
+  
+  /* 向左和向上各移动50%的距离，从而实现精确居中。 */
+  transform: translate(-50%,-50%);
+}
+
+/* CSS选择器，设置地图居中 */
+.map-container{
+  position: relative;
+  /* 地图是视口高度的75% */
+  height: 500px;
+  width: 400px;
+  /* flexbox布局模式 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,4 @@
+<navigation-bar title="Herimap" back="{{false}}" color="black" background="#FFF"></navigation-bar>
+<view class="container">
+  <text>地图页面</text>
+</view> 

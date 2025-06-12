@@ -1,0 +1,7 @@
+<view class="welcome-container">
+  <view class="content">
+    <text class="title">Herimap</text>
+    <text class="subtitle">文化遗产保护</text>
+  </view>
+  <view class="enter-btn" bindtap="enterApp">进入应用</view>
+</view> 

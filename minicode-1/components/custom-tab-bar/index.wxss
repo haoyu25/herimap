@@ -1,0 +1,42 @@
+/* tab-bar的样式 */
+.tab-bar {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  align-items: center;
+  /* 设置tabbar的大小高度 */
+  height: 8px;
+  background: white;
+  display: flex;
+  padding-bottom: env(safe-area-inset-bottom);
+  margin-bottom: calc(4rpx + env(safe-area-inset-bottom));
+  border-radius: 16px;
+  box-shadow: 0 0 10rpx rgba(0, 0, 0, 0.1);
+}
+
+
+.tab-bar-item {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+/* 字体粗细 */
+.tab-bar-text {
+  font-size: 28rpx;
+  color: #999999;
+  font-weight: 400;
+  line-height: 1;
+}
+
+/* 字体粗细 */
+.tab-bar-item.selected .tab-bar-text {
+  color: #000000;
+  font-weight: 500;
+} 

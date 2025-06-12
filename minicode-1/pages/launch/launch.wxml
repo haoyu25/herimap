@@ -1,0 +1,33 @@
+<view bindtap="navigateToIndex" class="full-page">
+  <view class="container">
+    <view class="content">
+      <text class="days">您已保护遗产</text>
+      <text class="text-large">{{days}}</text><text class="days">天</text>
+    </view>
+    <view class="content">
+     <text class="visit">参观</text>
+     <text class="text-large">{{visits}}</text>
+     <text class="visit">个遗产</text>
+    </view>
+    <view class="content">
+      <text class="route">走过</text>
+      <text class="text-large">{{routeslength}}</text>
+      <text class="route">条路线,</text>
+      <text class="text-large">{{distance}}</text>
+      <text class="route">km</text>
+    </view>
+    <view class="content">
+      <text class="shares">分享</text>
+      <text class="text-large">{{shares}}</text>
+      <text class="shares">条路线</text>
+    </view>
+  </view>
+  <view class="fixed-bottom">
+    <text class="text-bold">H</text>
+    <text class="shares">eri</text>
+    <text class="text-bold">m</text>
+    <text class="shares">ap\n</text>
+    <text class="weather">{{weather}}</text>
+    <text class="date">{{date}}</text>
+  </view>
+</view>

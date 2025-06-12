@@ -1,0 +1,71 @@
+/* pages/launch/launch.wxss */
+.container{
+  display: flex;
+  flex-direction: column;
+  /* 文本居中 */
+  align-items: center;
+
+  justify-content: center;
+  /* 视口高度，确保容器至少和视口一样高 */
+
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+/* 其他样式 */
+.content{
+  /* 文本居中 */
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.text-large{
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.text-bold{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.days, .visits, .route, .shares{
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.footer{
+  font-size: 18px;
+  color: #666;
+}
+
+.title{
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.date{
+  font-size: 10px;
+}
+
+.weather{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* 固定定位 */
+.fixed-bottom{
+  position:fixed;
+  bottom: 9%;
+  width: 100%;
+  text-align: center;
+}
+
+.full-page{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}

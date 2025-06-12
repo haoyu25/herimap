@@ -1,0 +1,39 @@
+<!--index.wxml-->
+<!-- 顶部导航 -->
+<navigation-bar title="Herimap" back="{{false}}" color="black" background="#FFF"></navigation-bar>
+
+<!-- 具有滚动功能的页面结构，应用scrollarea样式 -->
+<!-- 容器视图，包含一组子视图 -->
+<view class="biaozhu">
+  <text class="biaozhu">{{num}}人正在旅行</text>
+</view>
+
+<view class="title">
+<!-- 文本标签，显示标题并应用样式 -->
+  <text class="title">Herimap</text>
+</view>
+
+<view class="subtitle">
+  <text class="subtitle">城市遗产观光计划</text>
+  <text class="date">{{date}}</text>
+</view>
+
+<view class="route-title">
+  <text class="route-title">今日路线推荐</text>
+</view>
+
+<view class="map-title">
+  <text class="map-title">地图Map</text>
+</view>
+
+<view class="map-container">
+  <map 
+    id="myMap" 
+    latitude="{{latitude}}" 
+    longitude="{{longitude}}" 
+    scale="14"
+    markers="{{markers}}" 
+    show-location
+    style="width: 90%; height: 85%;">
+  </map>
+</view>
